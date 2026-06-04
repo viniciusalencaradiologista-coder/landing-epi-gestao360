@@ -1,17 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GestÃ£o 360 | App de EPI â€” SeguranÃ§a &amp; Qualidade Digital</title>
+    <title>Gestão 360 | App de EPI — Segurança &amp; Qualidade Digital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --yellow: #34C2A9;   /* teal â€” cor primÃ¡ria GestÃ£o 360 */
-            --orange: #F9A53A;   /* laranja â€” cor secundÃ¡ria GestÃ£o 360 */
+            --yellow: #34C2A9;   /* teal — cor primária Gestão 360 */
+            --orange: #F9A53A;   /* laranja — cor secundária Gestão 360 */
             --green:  #34C2A9;   /* teal */
             --dark:   #070E14;
             --dark2:  #0C1E2B;
@@ -31,7 +31,7 @@
             overflow-x: hidden;
         }
 
-        /* â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── NAV ────────────────────────────── */
         nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 100;
             padding: 18px 40px;
@@ -64,7 +64,7 @@
         }
         .nav-cta:hover { background: #5ed4bd; transform: translateY(-1px); }
 
-        /* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── HERO ───────────────────────────── */
         .hero {
             min-height: 100vh;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -128,7 +128,7 @@
         .stat .num { font-size: 2.2rem; font-weight: 900; color: var(--yellow); display: block; }
         .stat .lbl { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
 
-        /* â”€â”€ SHARED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── SHARED ─────────────────────────── */
         .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         .sec { padding: 100px 0; }
         .sec-bg { background: var(--dark2); }
@@ -148,14 +148,14 @@
             max-width: 580px; margin: 0 auto 64px;
         }
 
-        /* â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── REVEAL ─────────────────────────── */
         .r {
             opacity: 0; transform: translateY(36px);
             transition: opacity 0.7s ease, transform 0.7s ease;
         }
         .r.on { opacity: 1; transform: translateY(0); }
 
-        /* â”€â”€ PAIN FLOW â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── PAIN FLOW ──────────────────────── */
         .pain-flow {
             display: flex; align-items: center; justify-content: center;
             flex-wrap: wrap; gap: 8px; margin-bottom: 56px;
@@ -172,7 +172,7 @@
         .pstep.bad { border-color: rgba(255,60,60,0.4); background: rgba(255,0,0,0.06); }
         .parr { color: var(--muted); font-size: 1.4rem; padding: 0 4px; }
 
-        /* â”€â”€ COST CARDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── COST CARDS ─────────────────────── */
         .cost-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -188,7 +188,7 @@
         .ccard h3 { font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
         .ccard p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
 
-        /* â”€â”€ VS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── VS ─────────────────────────────── */
         .vs-wrap {
             display: grid; grid-template-columns: 1fr auto 1fr;
             gap: 24px; align-items: center; max-width: 920px; margin: 0 auto;
@@ -213,7 +213,7 @@
             margin: 0 auto; flex-shrink: 0;
         }
 
-        /* â”€â”€ FEATURES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── FEATURES ───────────────────────── */
         .feat-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -242,7 +242,7 @@
         .fcard h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; }
         .fcard p  { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
 
-        /* â”€â”€ PRICING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── PRICING ────────────────────────── */
         .pricing-card {
             max-width: 640px; margin: 0 auto;
             background: linear-gradient(135deg,rgba(52,194,169,0.08),rgba(249,165,58,0.08));
@@ -262,7 +262,7 @@
         .pitem .pt { font-weight: 700; font-size: 0.95rem; }
         .pitem .pd { font-size: 0.82rem; color: var(--muted); margin-top: 2px; }
 
-        /* â”€â”€ VIDEO PLACEHOLDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── VIDEO PLACEHOLDER ──────────────── */
         .vid-box {
             background: var(--dark3); border: 1px solid var(--border);
             border-radius: 20px; padding: 80px 40px;
@@ -277,7 +277,7 @@
             font-size: 1.8rem; color: var(--dark);
         }
 
-        /* â”€â”€ FINAL CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── FINAL CTA ──────────────────────── */
         .final-cta {
             padding: 120px 24px; text-align: center;
             background: radial-gradient(ellipse 80% 60% at 50% 110%,rgba(52,194,169,0.14) 0%,transparent 65%);
@@ -286,7 +286,7 @@
         .final-cta h2 em { font-style: normal; color: var(--yellow); }
         .final-cta .desc { color: var(--muted); font-size: 1.05rem; max-width: 480px; margin: 0 auto 48px; }
 
-        /* â”€â”€ WPP FLOAT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── WPP FLOAT ──────────────────────── */
         .wpp-float {
             position: fixed; bottom: 28px; right: 28px;
             width: 60px; height: 60px; background: #25D366; border-radius: 50%;
@@ -297,14 +297,14 @@
         }
         .wpp-float svg { width: 30px; height: 30px; fill: white; }
 
-        /* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── FOOTER ─────────────────────────── */
         footer {
             background: var(--dark2); padding: 36px 24px;
             text-align: center; border-top: 1px solid var(--border);
         }
         footer p { color: var(--muted); font-size: 0.82rem; }
 
-        /* â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── ANIMATIONS ─────────────────────── */
         @keyframes fadeUp   { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
         @keyframes fadeDown { from { opacity:0; transform:translateY(-18px); } to { opacity:1; transform:translateY(0); } }
         @keyframes pulse {
@@ -312,7 +312,7 @@
             50%      { box-shadow: 0 8px 48px rgba(37,211,102,0.7), 0 0 0 10px rgba(37,211,102,0.1); }
         }
 
-        /* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+        /* ── RESPONSIVE ─────────────────────── */
         @media (max-width: 700px) {
             nav { padding: 16px 20px; }
             .vs-wrap { grid-template-columns: 1fr; }
@@ -327,43 +327,43 @@
 </head>
 <body>
 
-<!-- â–ŒFLOATING WHATSAPP -->
+<!-- ▌FLOATING WHATSAPP -->
 <a class="wpp-float"
-   href="https://wa.me/5594984219333?text=OlÃ¡!%20Vi%20a%20GestÃ£o%20360%20e%20quero%20saber%20mais%20sobre%20o%20app%20de%20EPI."
+   href="https://wa.me/5594984219333?text=Olá!%20Vi%20a%20Gestão%20360%20e%20quero%20saber%20mais%20sobre%20o%20app%20de%20EPI."
    target="_blank" title="Fale no WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
-<!-- â–ŒNAV -->
+<!-- ▌NAV -->
 <nav id="nav">
     <a class="nav-logo" href="#">
-        <img src="/logo.jpg" alt="GestÃ£o 360">
+        <img src="/logo.jpg" alt="Gestão 360">
         <div class="brand">
-            <span class="brand-name">GestÃ£o 360</span>
-            <span class="brand-sub">SeguranÃ§a &amp; Qualidade</span>
+            <span class="brand-name">Gestão 360</span>
+            <span class="brand-sub">Segurança &amp; Qualidade</span>
         </div>
     </a>
     <a class="nav-cta"
-       href="https://wa.me/5594984219333?text=OlÃ¡!%20Vi%20a%20GestÃ£o%20360%20e%20quero%20uma%20demonstraÃ§Ã£o%20do%20app%20de%20EPI."
+       href="https://wa.me/5594984219333?text=Olá!%20Vi%20a%20Gestão%20360%20e%20quero%20uma%20demonstração%20do%20app%20de%20EPI."
        target="_blank">Falar com especialista</a>
 </nav>
 
-<!-- â–ŒHERO -->
+<!-- ▌HERO -->
 <section class="hero">
-    <div class="badge">ðŸ›¡ï¸ GestÃ£o 360 â€” SeguranÃ§a &amp; Qualidade</div>
+    <div class="badge">🛡️ Gestão 360 — Segurança &amp; Qualidade</div>
 
     <h1>Chega de <em>papel, impressora</em><br>e retrabalho na entrega de EPIs</h1>
 
-    <p>Controle 100% digital da entrega e devoluÃ§Ã£o de equipamentos de proteÃ§Ã£o â€” de qualquer dispositivo, em qualquer lugar com internet.</p>
+    <p>Controle 100% digital da entrega e devolução de equipamentos de proteção — de qualquer dispositivo, em qualquer lugar com internet.</p>
 
     <div class="hero-btns">
         <a class="btn-wpp"
-           href="https://wa.me/5594984219333?text=OlÃ¡!%20Vi%20a%20GestÃ£o%20360%20e%20quero%20uma%20demonstraÃ§Ã£o%20do%20app%20de%20EPI."
+           href="https://wa.me/5594984219333?text=Olá!%20Vi%20a%20Gestão%20360%20e%20quero%20uma%20demonstração%20do%20app%20de%20EPI."
            target="_blank">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Quero uma demonstraÃ§Ã£o
+            Quero uma demonstração
         </a>
-        <a class="btn-outline" href="#solucao">â–¶&nbsp; Ver como funciona</a>
+        <a class="btn-outline" href="#solucao">▶&nbsp; Ver como funciona</a>
     </div>
 
     <div class="stats-bar">
@@ -372,226 +372,226 @@
             <span class="lbl">Digital &amp; sem papel</span>
         </div>
         <div class="stat">
-            <span class="num" data-target="0" style="font-size:2rem;">ðŸ“±</span>
+            <span class="num" data-target="0" style="font-size:2rem;">📱</span>
             <span class="lbl">Mobile, Tablet e Desktop</span>
         </div>
         <div class="stat">
-            <span class="num" data-target="0" style="font-size:2rem;">âš¡</span>
+            <span class="num" data-target="0" style="font-size:2rem;">⚡</span>
             <span class="lbl">Assinatura digital no app</span>
         </div>
         <div class="stat">
-            <span class="num" data-target="0" style="font-size:2rem;">ðŸ”’</span>
+            <span class="num" data-target="0" style="font-size:2rem;">🔒</span>
             <span class="lbl">Dados seguros na nuvem</span>
         </div>
     </div>
 </section>
 
-<!-- â–ŒPAIN SECTION -->
+<!-- ▌PAIN SECTION -->
 <div class="sec-bg">
 <div class="wrap sec">
     <p class="sec-tag r">O problema atual</p>
-    <h2 class="sec-title r">Quanto custa o processo<br>que vocÃª usa hoje?</h2>
-    <p class="sec-sub r">Cada etapa do fluxo manual desperdiÃ§a dinheiro, tempo e aumenta o risco de perder documentos crÃ­ticos.</p>
+    <h2 class="sec-title r">Quanto custa o processo<br>que você usa hoje?</h2>
+    <p class="sec-sub r">Cada etapa do fluxo manual desperdiça dinheiro, tempo e aumenta o risco de perder documentos críticos.</p>
 
     <!-- flow -->
     <div class="pain-flow r">
         <div class="pstep">
-            <div class="ico">ðŸ–¨ï¸</div>
+            <div class="ico">🖨️</div>
             <div class="ttl">Imprime a ficha</div>
             <div class="sub">Papel + toner</div>
         </div>
-        <div class="parr">â†’</div>
+        <div class="parr">→</div>
         <div class="pstep">
-            <div class="ico">âœï¸</div>
+            <div class="ico">✍️</div>
             <div class="ttl">Colaborador assina</div>
             <div class="sub">Agenda + deslocamento</div>
         </div>
-        <div class="parr">â†’</div>
+        <div class="parr">→</div>
         <div class="pstep">
-            <div class="ico">ðŸ“·</div>
+            <div class="ico">📷</div>
             <div class="ttl">Digitaliza</div>
             <div class="sub">Tempo + scanner</div>
         </div>
-        <div class="parr">â†’</div>
+        <div class="parr">→</div>
         <div class="pstep">
-            <div class="ico">â˜ï¸</div>
+            <div class="ico">☁️</div>
             <div class="ttl">Sobe na nuvem</div>
-            <div class="sub">Tempo + organizaÃ§Ã£o</div>
+            <div class="sub">Tempo + organização</div>
         </div>
-        <div class="parr">â†’</div>
+        <div class="parr">→</div>
         <div class="pstep bad">
-            <div class="ico">ðŸ˜¤</div>
+            <div class="ico">😤</div>
             <div class="ttl">Busca o documento</div>
-            <div class="sub" style="color:#ff4444;">CadÃª o papel??</div>
+            <div class="sub" style="color:#ff4444;">Cadê o papel??</div>
         </div>
     </div>
 
     <!-- cost cards -->
     <div class="cost-grid">
         <div class="ccard r" style="transition-delay:.0s">
-            <span class="ico">ðŸ–¨ï¸</span>
+            <span class="ico">🖨️</span>
             <h3>Custo de papel e impressora</h3>
-            <p>Resmas, toner, manutenÃ§Ã£o, equipamento quebrado â€” custos invisÃ­veis que saem direto do lucro todo mÃªs.</p>
+            <p>Resmas, toner, manutenção, equipamento quebrado — custos invisíveis que saem direto do lucro todo mês.</p>
         </div>
         <div class="ccard r" style="transition-delay:.1s">
-            <span class="ico">ðŸ”„</span>
+            <span class="ico">🔄</span>
             <h3>Retrabalho que nunca acaba</h3>
-            <p>Imprimir â†’ assinar â†’ digitalizar â†’ subir. Quatro etapas lentas para uma tarefa que deveria levar segundos.</p>
+            <p>Imprimir → assinar → digitalizar → subir. Quatro etapas lentas para uma tarefa que deveria levar segundos.</p>
         </div>
         <div class="ccard r" style="transition-delay:.2s">
-            <span class="ico">âš–ï¸</span>
-            <h3>Risco em auditorias e fiscalizaÃ§Ãµes</h3>
-            <p>Documentos perdidos ou assinaturas ilegÃ­veis podem gerar multas do MinistÃ©rio do Trabalho. Sem rastreabilidade, o risco Ã© seu.</p>
+            <span class="ico">⚖️</span>
+            <h3>Risco em auditorias e fiscalizações</h3>
+            <p>Documentos perdidos ou assinaturas ilegíveis podem gerar multas do Ministério do Trabalho. Sem rastreabilidade, o risco é seu.</p>
         </div>
         <div class="ccard r" style="transition-delay:.3s">
-            <span class="ico">ðŸ’»</span>
-            <h3>Preso no desktop do escritÃ³rio</h3>
-            <p>Sistemas antigos que sÃ³ rodam em um computador. O RH fica engessado e quem estÃ¡ no campo nÃ£o consegue registrar nada.</p>
+            <span class="ico">💻</span>
+            <h3>Preso no desktop do escritório</h3>
+            <p>Sistemas antigos que só rodam em um computador. O RH fica engessado e quem está no campo não consegue registrar nada.</p>
         </div>
     </div>
 </div>
 </div>
 
-<!-- â–ŒSOLUTION -->
+<!-- ▌SOLUTION -->
 <div id="solucao">
 <div class="wrap sec">
-    <p class="sec-tag r">A soluÃ§Ã£o</p>
+    <p class="sec-tag r">A solução</p>
     <h2 class="sec-title r">Do papel para o digital.<br><em>Em um clique.</em></h2>
-    <p class="sec-sub r">O app que elimina cada etapa dolorosa e transforma a gestÃ£o de EPIs em algo simples, rÃ¡pido e auditÃ¡vel.</p>
+    <p class="sec-sub r">O app que elimina cada etapa dolorosa e transforma a gestão de EPIs em algo simples, rápido e auditável.</p>
 
     <div class="vs-wrap r">
         <div class="vs-box bad">
-            <h3>âŒ Processo atual</h3>
+            <h3>❌ Processo atual</h3>
             <ul class="vs-list">
-                <li><span>ðŸ–¨ï¸</span> Imprime ficha em papel</li>
-                <li><span>âœï¸</span> Aguarda colaborador assinar</li>
-                <li><span>ðŸ“·</span> Digitaliza o documento</li>
-                <li><span>ðŸ’¾</span> Organiza e sobe na nuvem</li>
-                <li><span>ðŸ”</span> Tenta encontrar depois</li>
-                <li><span>ðŸ’¸</span> Gasta com papel, toner, tempo</li>
-                <li><span>ðŸ–¥ï¸</span> Travado no computador</li>
+                <li><span>🖨️</span> Imprime ficha em papel</li>
+                <li><span>✍️</span> Aguarda colaborador assinar</li>
+                <li><span>📷</span> Digitaliza o documento</li>
+                <li><span>💾</span> Organiza e sobe na nuvem</li>
+                <li><span>🔍</span> Tenta encontrar depois</li>
+                <li><span>💸</span> Gasta com papel, toner, tempo</li>
+                <li><span>🖥️</span> Travado no computador</li>
             </ul>
         </div>
         <div class="vs-badge">VS</div>
         <div class="vs-box good">
-            <h3>âœ… Com a GestÃ£o 360</h3>
+            <h3>✅ Com a Gestão 360</h3>
             <ul class="vs-list">
-                <li><span>ðŸ“±</span> Registro digital no app</li>
-                <li><span>âœï¸</span> Assinatura eletrÃ´nica na hora</li>
-                <li><span>ðŸ”„</span> Salvo automaticamente</li>
-                <li><span>â˜ï¸</span> Na nuvem em tempo real</li>
-                <li><span>ðŸ”</span> Busca em segundos por nome ou data</li>
-                <li><span>ðŸ’š</span> Zero custo de impressÃ£o</li>
-                <li><span>ðŸŒ</span> Acessa de qualquer dispositivo</li>
+                <li><span>📱</span> Registro digital no app</li>
+                <li><span>✏️</span> Assinatura eletrônica na hora</li>
+                <li><span>🔄</span> Salvo automaticamente</li>
+                <li><span>☁️</span> Na nuvem em tempo real</li>
+                <li><span>🔍</span> Busca em segundos por nome ou data</li>
+                <li><span>💚</span> Zero custo de impressão</li>
+                <li><span>🌐</span> Acessa de qualquer dispositivo</li>
             </ul>
         </div>
     </div>
 </div>
 </div>
 
-<!-- â–ŒFEATURES -->
+<!-- ▌FEATURES -->
 <div class="sec-bg">
 <div class="wrap sec">
     <p class="sec-tag r">Diferenciais</p>
-    <h2 class="sec-title r">Por que a GestÃ£o 360 Ã©<br>diferente de tudo?</h2>
-    <p class="sec-sub r">NÃ£o Ã© apenas um software. Ã‰ uma soluÃ§Ã£o completa, personalizada para a identidade e realidade da sua empresa.</p>
+    <h2 class="sec-title r">Por que a Gestão 360 é<br>diferente de tudo?</h2>
+    <p class="sec-sub r">Não é apenas um software. É uma solução completa, personalizada para a identidade e realidade da sua empresa.</p>
 
     <div class="feat-grid">
         <div class="fcard r" style="transition-delay:.0s">
-            <div class="ficon fi-y">ðŸ“±</div>
+            <div class="ficon fi-y">📱</div>
             <h3>Mobile, Tablet e Desktop</h3>
-            <p>Funciona em qualquer dispositivo com internet. O smartphone do encarregado, o tablet do almoxarife, o computador do RH â€” tudo integrado, sem instalar nada.</p>
+            <p>Funciona em qualquer dispositivo com internet. O smartphone do encarregado, o tablet do almoxarife, o computador do RH — tudo integrado, sem instalar nada.</p>
         </div>
         <div class="fcard r" style="transition-delay:.1s">
-            <div class="ficon fi-g">ðŸš«</div>
-            <h3>Sem LicenÃ§a por MÃ¡quina</h3>
-            <p>EsqueÃ§a sistemas caros que cobram por computador instalado. Aqui vocÃª acessa de qualquer lugar, sem limite de dispositivos.</p>
+            <div class="ficon fi-g">🚫</div>
+            <h3>Sem Licença por Máquina</h3>
+            <p>Esqueça sistemas caros que cobram por computador instalado. Aqui você acessa de qualquer lugar, sem limite de dispositivos.</p>
         </div>
         <div class="fcard r" style="transition-delay:.2s">
-            <div class="ficon fi-b">ðŸŽ¨</div>
+            <div class="ficon fi-b">🎨</div>
             <h3>Identidade Visual da Sua Empresa</h3>
-            <p>O app leva a cara da sua organizaÃ§Ã£o: logo, cores e personalizaÃ§Ã£o completa. Seus colaboradores reconhecem como uma ferramenta da empresa.</p>
+            <p>O app leva a cara da sua organização: logo, cores e personalização completa. Seus colaboradores reconhecem como uma ferramenta da empresa.</p>
         </div>
         <div class="fcard r" style="transition-delay:.3s">
-            <div class="ficon fi-p">ðŸ“Š</div>
+            <div class="ficon fi-p">📊</div>
             <h3>Rastreabilidade Total</h3>
-            <p>Saiba exatamente qual EPI foi entregue, para quem, quando e com qual assinatura. HistÃ³rico completo e auditÃ¡vel na palma da mÃ£o.</p>
+            <p>Saiba exatamente qual EPI foi entregue, para quem, quando e com qual assinatura. Histórico completo e auditável na palma da mão.</p>
         </div>
         <div class="fcard r" style="transition-delay:.4s">
-            <div class="ficon fi-o">âš¡</div>
-            <h3>Setup e ImplantaÃ§Ã£o Inclusos</h3>
-            <p>ConfiguraÃ§Ã£o completa, treinamento da equipe e acompanhamento na largada. VocÃª comeÃ§a a usar em dias, nÃ£o meses.</p>
+            <div class="ficon fi-o">⚡</div>
+            <h3>Setup e Implantação Inclusos</h3>
+            <p>Configuração completa, treinamento da equipe e acompanhamento na largada. Você começa a usar em dias, não meses.</p>
         </div>
         <div class="fcard r" style="transition-delay:.5s">
-            <div class="ficon fi-g">ðŸ”’</div>
+            <div class="ficon fi-g">🔒</div>
             <h3>Conformidade para Auditorias</h3>
-            <p>Documentos organizados e prontos para qualquer fiscalizaÃ§Ã£o. Nunca mais perca uma assinatura ou fique sem comprovante de entrega.</p>
+            <p>Documentos organizados e prontos para qualquer fiscalização. Nunca mais perca uma assinatura ou fique sem comprovante de entrega.</p>
         </div>
     </div>
 </div>
 </div>
 
-<!-- â–ŒVIDEO -->
+<!-- ▌VIDEO -->
 <div class="wrap sec" style="max-width:900px;">
-    <p class="sec-tag r">DemonstraÃ§Ã£o</p>
-    <h2 class="sec-title r">Veja o app em aÃ§Ã£o</h2>
-    <p class="sec-sub r">Publicamos um vÃ­deo no LinkedIn mostrando como o sistema funciona na prÃ¡tica. Clique para assistir.</p>
+    <p class="sec-tag r">Demonstração</p>
+    <h2 class="sec-title r">Veja o app em ação</h2>
+    <p class="sec-sub r">Publicamos um vídeo no LinkedIn mostrando como o sistema funciona na prática. Clique para assistir.</p>
 
     <div class="vid-box r"
          onclick="window.open('https://www.linkedin.com/','_blank')"
-         title="Assistir vÃ­deo no LinkedIn">
-        <div class="play-btn">â–¶</div>
-        <p style="font-weight:700;font-size:1.1rem;">Assistir vÃ­deo no LinkedIn</p>
-        <p style="color:var(--muted);font-size:0.88rem;">DemonstraÃ§Ã£o completa do aplicativo em funcionamento</p>
+         title="Assistir vídeo no LinkedIn">
+        <div class="play-btn">▶</div>
+        <p style="font-weight:700;font-size:1.1rem;">Assistir vídeo no LinkedIn</p>
+        <p style="color:var(--muted);font-size:0.88rem;">Demonstração completa do aplicativo em funcionamento</p>
     </div>
-    <!-- ðŸ’¡ Dica: substitua o onclick acima pela URL real do seu post/vÃ­deo no LinkedIn -->
+    <!-- 💡 Dica: substitua o onclick acima pela URL real do seu post/vídeo no LinkedIn -->
 </div>
 
-<!-- â–ŒPRICING -->
+<!-- ▌PRICING -->
 <div class="sec-bg">
 <div class="wrap sec">
     <p class="sec-tag r" style="text-align:center;">Investimento</p>
     <h2 class="sec-title r">Pacote personalizado<br>para a sua empresa</h2>
-    <p class="sec-sub r">Sem tabela fechada. Um pacote desenhado para o tamanho e a realidade do seu negÃ³cio.</p>
+    <p class="sec-sub r">Sem tabela fechada. Um pacote desenhado para o tamanho e a realidade do seu negócio.</p>
 
     <div class="pricing-card r">
-        <div style="font-size:3rem;">ðŸŽ¯</div>
+        <div style="font-size:3rem;">🎯</div>
         <h3>Tudo incluso no seu pacote</h3>
-        <p class="sub">Valores adequados ao porte e Ã s necessidades da sua empresa</p>
+        <p class="sub">Valores adequados ao porte e às necessidades da sua empresa</p>
 
         <div class="pitems">
             <div class="pitem">
-                <div class="pi">ðŸš€</div>
+                <div class="pi">🚀</div>
                 <div>
-                    <div class="pt">Setup e ConfiguraÃ§Ã£o</div>
-                    <div class="pd">InstalaÃ§Ã£o completa com identidade visual e estrutura personalizada</div>
+                    <div class="pt">Setup e Configuração</div>
+                    <div class="pd">Instalação completa com identidade visual e estrutura personalizada</div>
                 </div>
             </div>
             <div class="pitem">
-                <div class="pi">ðŸ‘¥</div>
+                <div class="pi">👥</div>
                 <div>
-                    <div class="pt">Treinamento e ImplantaÃ§Ã£o</div>
-                    <div class="pd">Sua equipe aprende tudo â€” do operador ao gestor de seguranÃ§a</div>
+                    <div class="pt">Treinamento e Implantação</div>
+                    <div class="pd">Sua equipe aprende tudo — do operador ao gestor de segurança</div>
                 </div>
             </div>
             <div class="pitem">
-                <div class="pi">ðŸ“…</div>
+                <div class="pi">📅</div>
                 <div>
-                    <div class="pt">Mensalidade AcessÃ­vel</div>
-                    <div class="pd">Custo fixo mensal sem surpresas â€” quanto vocÃª gasta hoje com papel e impressora?</div>
+                    <div class="pt">Mensalidade Acessível</div>
+                    <div class="pd">Custo fixo mensal sem surpresas — quanto você gasta hoje com papel e impressora?</div>
                 </div>
             </div>
             <div class="pitem">
-                <div class="pi">ðŸŽ¨</div>
+                <div class="pi">🎨</div>
                 <div>
                     <div class="pt">App com sua identidade visual</div>
-                    <div class="pd">Logo, cores e personalizaÃ§Ã£o â€” o app Ã© da sua empresa, nÃ£o genÃ©rico</div>
+                    <div class="pd">Logo, cores e personalização — o app é da sua empresa, não genérico</div>
                 </div>
             </div>
         </div>
 
         <a class="btn-wpp"
-           href="https://wa.me/5594984219333?text=OlÃ¡!%20Quero%20saber%20o%20valor%20do%20pacote%20da%20GestÃ£o%20360%20para%20minha%20empresa."
+           href="https://wa.me/5594984219333?text=Olá!%20Quero%20saber%20o%20valor%20do%20pacote%20da%20Gestão%20360%20para%20minha%20empresa."
            target="_blank" style="display:inline-flex;">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Solicitar proposta personalizada
@@ -600,44 +600,44 @@
 </div>
 </div>
 
-<!-- â–ŒFINAL CTA -->
+<!-- ▌FINAL CTA -->
 <section class="final-cta">
     <p class="r" style="font-size:0.8rem;color:var(--muted);font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;">
         Pronto para eliminar o papel da sua empresa?
     </p>
-    <h2 class="r">Comece hoje a<br><em>transformaÃ§Ã£o digital</em><br>dos seus EPIs</h2>
-    <p class="desc r">Fale agora com nosso especialista. Sem compromisso, sem enrolaÃ§Ã£o â€” uma conversa direta sobre como podemos ajudar.</p>
+    <h2 class="r">Comece hoje a<br><em>transformação digital</em><br>dos seus EPIs</h2>
+    <p class="desc r">Fale agora com nosso especialista. Sem compromisso, sem enrolação — uma conversa direta sobre como podemos ajudar.</p>
 
     <a class="btn-wpp r"
-       href="https://wa.me/5594984219333?text=OlÃ¡!%20Quero%20saber%20como%20a%20GestÃ£o%20360%20pode%20ajudar%20minha%20empresa.%20Pode%20me%20contar%20mais?"
+       href="https://wa.me/5594984219333?text=Olá!%20Quero%20saber%20como%20a%20Gestão%20360%20pode%20ajudar%20minha%20empresa.%20Pode%20me%20contar%20mais?"
        target="_blank" style="display:inline-flex;">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Falar agora no WhatsApp
     </a>
 
     <p class="r" style="margin-top:20px;font-size:0.82rem;color:var(--muted);">
-        Sem spam. SÃ³ uma conversa direta e objetiva. ðŸ¤
+        Sem spam. Só uma conversa direta e objetiva. 🤝
     </p>
 </section>
 
-<!-- â–ŒFOOTER -->
+<!-- ▌FOOTER -->
 <footer>
-    <p>Â© 2025 GestÃ£o 360 Â· SeguranÃ§a &amp; Qualidade Â· GestÃ£o Inteligente de EPIs</p>
+    <p>© 2025 Gestão 360 · Segurança &amp; Qualidade · Gestão Inteligente de EPIs</p>
     <p style="margin-top:8px;">
         <a href="mailto:gestaosegurancaqualidade@gmail.com" style="color:var(--yellow);text-decoration:none;">gestaosegurancaqualidade@gmail.com</a>
-        &nbsp;Â·&nbsp;
+        &nbsp;·&nbsp;
         <a href="https://wa.me/5594984219333" target="_blank" style="color:var(--yellow);text-decoration:none;">(94) 98421-9333</a>
     </p>
 </footer>
 
 <script>
-    // â”€â”€ Scroll reveal
+    // ── Scroll reveal
     const io = new IntersectionObserver(entries => {
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); } });
     }, { threshold: 0.1 });
     document.querySelectorAll('.r').forEach(el => io.observe(el));
 
-    // â”€â”€ Counter animation (only for numeric targets)
+    // ── Counter animation (only for numeric targets)
     const co = new IntersectionObserver(entries => {
         entries.forEach(e => {
             if (!e.isIntersecting) return;
@@ -656,7 +656,7 @@
     });
     document.querySelectorAll('[data-target]').forEach(el => co.observe(el));
 
-    // â”€â”€ Nav scroll opacity
+    // ── Nav scroll opacity
     window.addEventListener('scroll', () => {
         document.getElementById('nav').style.background =
             window.scrollY > 60 ? 'rgba(7,14,20,0.97)' : 'rgba(7,14,20,0.88)';
@@ -664,4 +664,3 @@
 </script>
 </body>
 </html>
-
